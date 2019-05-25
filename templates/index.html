@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Ip Locater</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<link href="/static/css/font-awesome.css" rel="stylesheet">
+	<link href="/static/css/style.css" rel='stylesheet' type='text/css' />
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+</head>
+
+<body>
+	<h1>Ip Lookup</h1>
+	<div class="clear-loading spinner">
+		<span></span>
+	</div>
+	<div class="w3ls-login box box--big">
+		<form action="" method="POST">
+			<div class="agile-field-txt">
+				<label><i class="fa fa-search" aria-hidden="true"></i>Ip Address</label>
+				<input type="text" name="ipaddress" value="{{request.form.ipaddress}}" placeholder="Enter Ip Address" />
+			</div>
+				<input type="submit" value="FIND">
+		</form>
+	</div>
+</body>
+</html>
+
+
+
